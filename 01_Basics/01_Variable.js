@@ -1,0 +1,1 @@
+console.log("Risha is the  another name  of Aradhya")
