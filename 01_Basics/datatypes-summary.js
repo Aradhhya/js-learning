@@ -29,10 +29,22 @@
          //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
          ///https://262.ecma-international.org/5.1/#sec-11.4.3
          
-         // stack (primitive), Heap ( Non-primitive)
+         // [stack (primitive datatype) =>copies the original value], [Heap ( Non-primitive)  => reference the original value]
 
          let myYtname = "aradhya.com"
          let anothername = myYtname
          anothername ="xyz.com"
          console.log(anothername);
-         console.log(myYtname)
+         console.log(myYtname);
+          
+
+         let userOne = {
+              email: "user@google.com",
+              upi:"user@ybl"
+         }
+
+         let userTwo = userOne
+         userTwo.email = "aradhya.email"
+
+         console.log(userOne.email);
+         console.log(userTwo.email);
