@@ -1,8 +1,8 @@
 //symbol =>to make any value unique
 //   primitive dataTypes
  // 07 types: String, Number, Boolean, null, undefined, symbol,BigInt
-   const id = symbol('123')
-   const anotherId = symbol('123')
+   const id = Symbol('123')
+   const anotherId = Symbol('123')
    console.log(id == anotherId);    // =>false
      
     const bigNumber = 2349676950n 
@@ -24,4 +24,15 @@
    
 
         // Type of operator       undefined,boolean,string=>undefined,boolean,string
-         //                       null  => object                            
+         //                       null  => object         
+         
+         //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+         ///https://262.ecma-international.org/5.1/#sec-11.4.3
+         
+         // stack (primitive), Heap ( Non-primitive)
+
+         let myYtname = "aradhya.com"
+         let anothername = myYtname
+         anothername ="xyz.com"
+         console.log(anothername);
+         console.log(myYtname)
