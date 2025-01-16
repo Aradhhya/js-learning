@@ -26,7 +26,12 @@
              /// slice   , splice
               
              console.log(" A" , arr)
-             const myn1 = arr.slice(1,8)
+             const myn1 = arr.slice(1,3) // => counts index and then print the value [4,7]
+             
+             console .log("  B " , arr)  // here array do not change
              console.log(myn1);
-         
+             const myn2 = arr.splice(1,3) // => only the element whose index is given that only comes [4,7,8]
+           
+             console .log("  c " , arr)  // array changes to [1,9]
+             console.log(myn2); /// [4,7,8]
 
