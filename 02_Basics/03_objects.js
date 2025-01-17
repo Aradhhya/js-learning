@@ -20,10 +20,11 @@
      }
         
         console.log(jsUser.name);  // => However this is not a good method
-        console.log(jsUser["email"])  // => Another way to access the values of the objects
+        console.log(jsUser["email"])  // => Another way to access the elements of the objects
         console.log(jsUser.fullName)
         console.log(jsUser["fullName"])
         console.log(jsUser[mykey]);  // as a symbol type answer will be there
+        
 
         jsUser.email= "aradhya@gmail.com" // =>for changing the element of an object
           // Object.freeze(jsUser) // now no amendements can be done further
