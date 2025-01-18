@@ -40,8 +40,15 @@ if (true){  // => inside if whatever is written is called block scope
         // console.log(username);
 
         //  ++++++++++++++++++++ INTERESTING  ++++++++++++++++++
-
-        function addone(num){
+        console.log( addone(5))  //  => it will not give any error and result will be 6 as it is normal declaration
+        function addone(num){ // called function
             return num+1
         }
-        addone(5)
+        
+       // console.log(addTwo(5))  => it will give error because variable declaration is there(cannot access before declaration)
+        const addTwo/* called variable*/  = function (num){  // called expression
+          return num+2
+        }
+        addTwo(5)
+
+       // this keyword => current context ke baare me btata h
